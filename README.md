@@ -55,16 +55,27 @@ export LIBSUMO_AS_TRACI=1
 ```
 Notice that you will not be able to run with sumo-gui or with multiple simulations in parallel if this is active ([more details](https://sumo.dlr.de/docs/Libsumo.html)).
 
-### Install SUMO-RL
+### Install SUMO-RL, Stable Baselines 3, Gymnasium to run project 
 
 <!--begin install-->
 
 Stable release version is available through pip
 ```bash
-pip install sumo-rl
+pip install sumo-rl stable_baselines3 gymnasium
 ```
 
 <!-- end install -->
+
+### Setup and activate virtual environment to run simulation:
+<!--begin setup-->
+```bash
+python -m venv env
+# On Windows
+env\Scripts\activate
+# On Unix/MacOS
+source env/bin/activate
+```
+<!-- end setup -->
 
 ## MDP - Observations, Actions and Rewards
 
